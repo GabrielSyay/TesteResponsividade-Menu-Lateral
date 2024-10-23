@@ -1,0 +1,45 @@
+
+
+@import "_layout.scss";
+/* ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 120px;
+}
+
+@include responsive(desktop) {
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+
+        .logo {
+
+            img {
+                width: 40px;
+            }
+        }
+
+        .hamburguer {
+            display: none;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: $gap-r;
+
+         }
+         
+    }
+}

@@ -1,0 +1,23 @@
+/* Layouts Responsivos */
+$desktop: 1440px;
+$mobile: 720px;
+
+/* Espaçamentos e bordas */
+$gap-r: .5rem;
+$border-r: .8rem;
+
+
+@mixin responsive($size) {
+
+    /* Predefinição */
+    @if $size == desktop {
+        @media (max-width: $desktop) {
+            @content;
+        }
+    }@else if $size == mobile {
+        @media (max-width: $mobile) {
+            @content;
+        }
+    }
+
+}
