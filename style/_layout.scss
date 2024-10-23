@@ -1,6 +1,7 @@
 /* Layouts Responsivos */
+$desktop-HD: 1980px;
 $desktop: 1440px;
-$mobile: 720px;
+$mobile: 920px;
 
 /* Espaçamentos e bordas */
 $gap-r: .5rem;
@@ -11,7 +12,7 @@ $border-r: .8rem;
 
     /* Predefinição */
     @if $size == desktop {
-        @media (max-width: $desktop) {
+        @media (max-width: $desktop) or (max-width: $desktop-HD) {
             @content;
         }
     }@else if $size == mobile {
